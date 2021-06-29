@@ -1,0 +1,69 @@
+.main {
+  background: url("/assets/background.png");
+  padding: 2.5rem 0;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.intro {
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+  line-height: 3rem;
+}
+
+.intro button {
+  background-color: #232b34;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+}
+
+.intro_text {
+  text-align: center;
+}
+.intro_heading {
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+
+.intro button img {
+  margin-left: 0.8rem;
+}
+
+.intro button:hover,
+.intro button:active,
+.intro button:focus-within {
+  background-color: #101010 !important;
+  outline: none !important;
+}
+
+.bestselling_wrapper {
+  border-radius: 20px;
+  background-color: #232b34;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+
+.bestselling_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+
+  color: #f4f4f4;
+  font-weight: 600;
+
+  line-height: 3.13rem;
+}
+.bestselling_items {
+  overflow-x: scroll;
+  display: flex;
+}
+
+.bestselling_items::-webkit-scrollbar {
+  display: none;
+}
