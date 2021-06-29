@@ -63,7 +63,7 @@
   overflow-x: scroll;
   display: flex;
   background: linear-gradient(270deg, #232b34 1.73%, rgba(35, 43, 52, 0) 100%);
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .bestselling_items::-webkit-scrollbar {
@@ -72,6 +72,6 @@
 
 @media screen and (max-width: 600px) {
   .bestselling_desc {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
