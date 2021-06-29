@@ -62,6 +62,8 @@
 .bestselling_items {
   overflow-x: scroll;
   display: flex;
+  background: linear-gradient(270deg, #232b34 1.73%, rgba(35, 43, 52, 0) 100%);
+  opacity: 0.4;
 }
 
 .bestselling_items::-webkit-scrollbar {

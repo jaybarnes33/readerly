@@ -14,11 +14,12 @@ const Book = ({ book }) => {
         {`
           .book_wrapper {
             margin-left: 30px;
-            flex-basis: none;
           }
+
           .book_text {
             text-align: center;
           }
+
           .book_text h2 {
             font-size: 1rem;
             color: #ffffff;
