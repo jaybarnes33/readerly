@@ -28,6 +28,8 @@ header .navbar {
 footer {
   text-align: center;
   background: url("/assets/background.png");
+  background-position: center bottom;
+  background-size: cover;
   padding: 10px;
 }
 .navbar-light .navbar-nav .nav-link {
