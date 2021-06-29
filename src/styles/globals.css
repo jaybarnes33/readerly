@@ -37,7 +37,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar-collapse {
+  header .navbar {
     background: url("/assets/background.png");
+  }
+  header {
+    backround: red;
   }
 }
