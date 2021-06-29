@@ -20,7 +20,7 @@ const Book = ({ book }) => {
             text-align: center;
           }
           .book_text h2 {
-            font-size: 0.8rem;
+            font-size: 1rem;
             color: #ffffff;
           }
 
