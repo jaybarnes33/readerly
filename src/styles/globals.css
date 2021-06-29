@@ -21,8 +21,14 @@ body {
 }
 
 header .navbar {
-  background: url("/assets/background.png") cover bottom;
+  background: url("/assets/background.png");
   opacity: 0.95;
+}
+
+footer {
+  text-align: center;
+  background: url("/assets/background.png");
+  padding: 10px;
 }
 .navbar-light .navbar-nav .nav-link {
   color: black !important;
