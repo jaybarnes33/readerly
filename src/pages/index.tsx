@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Book from "../components/Core/Book";
 import Layout from "../components/Core/Layout";
 import bestselling from "../data/bestselling";
 import styles from "../styles/home.module.css";
 import Image from "next/image";
-import Container from "../components/Core/Container";
+
 import Header from "../components/Core/Header";
 
 export default function Home() {
@@ -41,18 +41,20 @@ export default function Home() {
             </div>
           </section>
           <section className={styles.bestselling}>
-            <div className={styles.bestselling_wrapper}>
-              <div className={`${styles.bestselling_desc} heading`}>
-                The Best-selling Books of 2021
-              </div>
+            <Container>
+              <div className={styles.bestselling_wrapper}>
+                <div className={`${styles.bestselling_desc} heading`}>
+                  The Best-selling Books of 2021
+                </div>
 
-              <div className={styles.bestselling_items}>
-                {bestselling.map((item, index) => (
-                  <Book book={item} key={`item${index}`} />
-                ))}
+                <div className={styles.bestselling_items}>
+                  {bestselling.map((item, index) => (
+                    <Book book={item} key={`item${index}`} />
+                  ))}
+                </div>
+                <div className={styles.overlay}></div>
               </div>
-              <div className={styles.overlay}></div>
-            </div>
+            </Container>
           </section>
         </main>
       </Layout>
