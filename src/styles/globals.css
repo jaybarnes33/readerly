@@ -20,12 +20,6 @@ body {
   width: 30px;
 }
 
-header .navbar {
-  background: url("/assets/background.png");
-  background: url("/assets/background.png");
-  opacity: 0.95;
-}
-
 footer {
   text-align: center;
   background-position: center bottom;
@@ -38,8 +32,11 @@ footer {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 990px) {
-  header .navbar {
-    background: url("/assets/background.png");
-  }
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header .navbar {
+  background-color: #f4f4f4;
 }

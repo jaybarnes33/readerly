@@ -8,7 +8,7 @@ const Header = () => {
   const [clicked, setClicked] = useState(false);
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" fixed="top">
+      <Navbar collapseOnSelect expand="lg">
         <Navbar.Brand>
           <Link href="/">
             <Image src="/assets/logo.png" alt="Logo" className="logo" />

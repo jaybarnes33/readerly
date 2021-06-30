@@ -7,6 +7,7 @@ import bestselling from "../data/bestselling";
 import styles from "../styles/home.module.css";
 import Image from "next/image";
 import Container from "../components/Core/Container";
+import Header from "../components/Core/Header";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Layout>
         <main className={styles.main}>
+          <Header />
           <section className={styles.intro}>
             <div className={styles.intro_text}>
               <h1 className={styles.intro_heading}>Endless Knowledge</h1>

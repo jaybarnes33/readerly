@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <Head>
         <link rel="icon" href="/assets/favicon.ico" />
       </Head>
-      <Header />
+
       <div className="app"> {children}</div>
       <Footer />
     </>
