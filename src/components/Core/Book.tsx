@@ -1,9 +1,11 @@
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 const Book = ({ book }) => {
   return (
     <>
       <div className="book_wrapper">
-        <Image className="book_image" src={book.image} alt={book.name} />
+        <div className="book_image">
+          <Image src={book.image} alt={book.name} layout="fill" />
+        </div>
         <div className="book_text">
           <h2>{book.name}</h2>
           <h3>{book.author}</h3>
@@ -14,10 +16,18 @@ const Book = ({ book }) => {
         {`
           .book_wrapper {
             margin-left: 30px;
+            cursor: pointer;
+          }
+
+          .book_image {
+            position: relative;
+            height: 190px;
+            width: 165px;
           }
 
           .book_text {
             text-align: center;
+            letter-spacing: 0.01rem;
           }
 
           .book_text h2 {

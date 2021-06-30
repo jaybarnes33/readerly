@@ -21,6 +21,8 @@ body {
 }
 
 header .navbar {
+  background: url("/assets/background.png");
+  background: url("/assets/background.png");
   opacity: 0.95;
 }
 
@@ -36,7 +38,7 @@ footer {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) {
   header .navbar {
     background: url("/assets/background.png");
   }

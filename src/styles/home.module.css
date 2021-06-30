@@ -1,6 +1,6 @@
 .main {
   background: url("/assets/background.png");
-  padding: 2.5rem 0;
+  padding: 7rem 0;
   background-size: cover;
   min-height: 100vh;
 }
@@ -12,11 +12,13 @@
   line-height: 3rem;
 }
 
-.intro button {
+.cta {
   background-color: #232b34;
   padding: 1rem 2rem;
   color: white;
   border: none;
+  box-shadow: 0px 12px 35px 0px #363c4966;
+  border-radius: 4px;
 }
 
 .intro_text {
@@ -29,26 +31,41 @@
   letter-spacing: 1.5px;
 }
 
-.intro button img {
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.cta .book_icon {
   margin-left: 0.8rem;
+  display: grid;
+  place-items: center;
 }
 
-.intro button:hover,
-.intro button:active,
-.intro button:focus-within {
+.cta:hover,
+.cta:active,
+.cta:focus-within {
   background-color: #101010 !important;
   outline: none !important;
+  box-shadow: inherit !important;
 }
 
+.bestselling {
+  padding: 0 60px;
+}
 .bestselling_wrapper {
+  position: relative;
   border-radius: 20px;
   background-color: #232b34;
-  padding: 40px 20px;
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 40% 60%;
+  box-shadow: 0px 20px 60px 0px #363c498c;
+  padding: 30px;
 }
 
 .bestselling_desc {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,16 +73,33 @@
   padding: 20px;
   color: #f4f4f4;
   font-weight: 600;
-
   line-height: 3.13rem;
 }
+
+.bestselling_desc::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 90%;
+  height: 50%;
+  transform: translateY(-50%);
+  border-right: 4px solid #f4f4f4;
+}
 .bestselling_items {
+  position: relative;
   overflow-x: scroll;
   display: flex;
-  background: linear-gradient(270deg, #232b34 1.73%, rgba(35, 43, 52, 0) 100%);
-  opacity: 0.7;
 }
 
+.overlay {
+  position: absolute;
+  top: 9%;
+  height: 80%;
+  left: 71%;
+  width: 29%;
+  background: linear-gradient(270deg, #232b34 1.73%, rgba(35, 43, 52, 0) 100%);
+}
 .bestselling_items::-webkit-scrollbar {
   display: none;
 }
@@ -73,5 +107,19 @@
 @media screen and (max-width: 600px) {
   .bestselling_desc {
     font-size: 2rem;
+  }
+
+  .bestselling_desc::after {
+    content: "";
+    position: absolute;
+    transform: translateY(-10%);
+    width: 90%;
+
+    border: none;
+    border-bottom: 4px solid #f4f4f4;
+  }
+
+  .bestselling_wrapper {
+    grid-template-columns: 100%;
   }
 }
